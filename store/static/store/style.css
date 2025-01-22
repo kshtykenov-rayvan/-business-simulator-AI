@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.frame {
+    position: relative;
+    width: 80vw; /* Динамическая ширина контейнера */
+    height: calc(80vw * 9 / 16); /* Сохранение соотношения сторон 16:9 */
+    max-width: 1280px; /* Максимальная ширина для больших экранов */
+    max-height: 720px; /* Максимальная высота для экранов с ограничением */
+    background-image: url('/static/store/images/background/main_background.png');
+    background-size: cover; /* Масштабирование изображения для заполнения контейнера */
+    background-position: center; /* Центрирование фонового изображения */
+    border-radius: 20px; /* Скругленные углы для улучшения внешнего вида */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Легкое свечение для создания глубины */
+    display: flex; /* Использование Flexbox для размещения содержимого */
+    flex-direction: row; /* Элементы располагаются в строку */
+    gap: 10px; /* Отступы между элементами */
+    padding: 10px; /* Внутренние отступы контейнера */
+}
+
+.area-one {
+    width: 700px; /* Фиксированная ширина для первого блока */
+    height: auto; /* Автоматическая высота для адаптации содержимого */
+    background-color: #0000004f; /* Полупрозрачный черный фон */
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    border-radius: 10px; /* Скругленные углы для блока */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень для выделения блока */
+}
+
+.area-two {
+    flex: 1; /* Занимает всё оставшееся пространство контейнера */
+    background-color: #0000004f; /* Полупрозрачный черный фон для второго блока */
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень для выделения */
+}
